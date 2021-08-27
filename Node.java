@@ -1,13 +1,15 @@
 import Includes.*;
 
 public class Node{
-	public String data;
+	public Data data;
 	public Node previous;
 	public Node next;
-	private final String dgst;
-	public CRF obj;
+	public String dgst;
 
 	public Node(String data, String prevDgst){
+		CRF obj = new CRF(64);
 		/* Implement code here*/
+		
+
 	}
 }
