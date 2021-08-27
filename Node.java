@@ -13,5 +13,6 @@ public class Node{
 	public Node(String data, String prevDgst){
 		CRF obj = new CRF(64);
 		/* Implement code here*/
+		
 	}
 }

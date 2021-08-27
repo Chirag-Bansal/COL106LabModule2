@@ -27,7 +27,7 @@ public class AuthList{
 		return lastNode.dgst;
 	}
 
-	public String DeleteFirst(String proof) throws AuthenticationFailedException {
+	public String DeleteFirst(String proof) throws AuthenticationFailedException, EmptyListException {
 		/*
 			Implement Code here
 		*/
@@ -36,7 +36,7 @@ public class AuthList{
 	}
 
 
-	public String DeleteLast(String proof) throws AuthenticationFailedException {
+	public String DeleteLast(String proof) throws AuthenticationFailedException, EmptyListException {
 		/*
 			Implement Code here
 		*/
@@ -45,14 +45,14 @@ public class AuthList{
 	}
 
 
-	public static Node RetrieveNode(AuthList current, String proof, String data) throws AuthenticationFailedException{
+	public static Node RetrieveNode(AuthList current, String proof, String data) throws AuthenticationFailedException, DocumentNotFoundException{
 		/*
 			Implement Code here
 		*/
 		return null;
 	}
 
-	public void AttackList(AuthList current, String new_data){
+	public void AttackList(AuthList current, String new_data)throws EmptyListException{
 		/*
 			Implement Code here
 		*/

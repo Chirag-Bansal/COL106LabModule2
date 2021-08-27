@@ -22,7 +22,7 @@ public class AuthStack{
 		return null;
 	}
 
-	public String pop(String proof)throws AuthenticationFailedException, EmptyListException{
+	public String pop(String proof)throws AuthenticationFailedException, EmptyStackException{
 		/*
 			Implement Code here
 		*/
