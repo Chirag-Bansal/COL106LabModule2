@@ -1,6 +1,6 @@
 public class AuthList{
 
-	public static final String start_string = "FW2s85l7UVyqlOtTb3o7NvQCyqZk1gS0yj4VDg5H69QmY8dVKHfPhVhFr5tH7qqe";
+	public static final String start_string = "2018CS50402";
 	public Node firstNode;
 	public Node lastNode;
 
@@ -45,7 +45,7 @@ public class AuthList{
 	}
 
 
-	public static Node RetrieveList(AuthList current, String proof, String data) throws AuthenticationFailedException{
+	public static Node RetrieveNode(AuthList current, String proof, String data) throws AuthenticationFailedException{
 		/*
 			Implement Code here
 		*/

@@ -1,28 +1,38 @@
 public class AuthStack{
-	private static final String start_string = "FW2s85l7UVyqlOtTb3o7NvQCyqZk1gS0yj4VDg5H69QmY8dVKHfPhVhFr5tH7qqe";
+	private static final String start_string = "2018CS50402";
 	private StackNode top;
 
 	public AuthStack(){
-
+		/*
+			Implement Code here
+		*/
 	}
 
-	public static boolean CheckStack(AuthStack current, String proof){
-
+	public static boolean CheckStack(AuthStack current, String proof) throws AuthenticationFailedException{
+		/*
+			Implement Code here
+		*/
+		return false;
 	}
 
-	public String push(Data datainsert, String proof){
-
+	public String push(Data datainsert, String proof)throws AuthenticationFailedException{
+		/*
+			Implement Code here
+		*/
+		return null;
 	}
 
-	public String pop(String proof){
-
+	public String pop(String proof)throws AuthenticationFailedException, EmptyListException{
+		/*
+			Implement Code here
+		*/
+		return null;
 	}
 
-	public String GetTop(String proof){
-
-	}
-
-	public static StackNode RetrieveStack(){
-		
+	public String GetTop(String proof)throws AuthenticationFailedException{
+		/*
+			Implement Code here
+		*/
+		return null;
 	}
 }
