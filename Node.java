@@ -5,6 +5,8 @@ public class Node{
 	/*
 		Data has a String attribute, you can set the value of which 
 		in the constructor using new Data("<value>")
+
+		For more reference see the Data.java file in Includes
 	*/
 	public Node previous;
 	public Node next;

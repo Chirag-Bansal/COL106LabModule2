@@ -1,3 +1,5 @@
+import Includes.*;
+
 public class AuthList{
 
 	public static final String start_string = "2018CS50402";
@@ -10,10 +12,16 @@ public class AuthList{
 		*/
 	}
 
+	/*
+		Note that the Exceptions have already been defined for you in the includes file,
+		you just have to raise them accordingly
+
+	*/
+
+
 	public static boolean CheckList(AuthList current, String proof) throws AuthenticationFailedException {
-		/*
-			Implement Code here
-		*/
+		
+
 
 		return true;
 	}
@@ -24,7 +32,7 @@ public class AuthList{
 			Implement Code here
 		*/
 
-		return lastNode.dgst;
+		return null;
 	}
 
 	public String DeleteFirst(String proof) throws AuthenticationFailedException, EmptyListException {
@@ -32,7 +40,7 @@ public class AuthList{
 			Implement Code here
 		*/
 
-		return lastNode.dgst;
+		return null;
 	}
 
 
@@ -41,11 +49,11 @@ public class AuthList{
 			Implement Code here
 		*/
 
-		return lastNode.dgst;
+		return null;
 	}
 
 
-	public static Node RetrieveNode(AuthList current, String proof, String data) throws AuthenticationFailedException, DocumentNotFoundException{
+	public static Node RetrieveNode(AuthList current, String proof, Data data) throws AuthenticationFailedException, DocumentNotFoundException{
 		/*
 			Implement Code here
 		*/

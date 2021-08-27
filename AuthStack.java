@@ -1,3 +1,5 @@
+import Includes.*;
+
 public class AuthStack{
 	private static final String start_string = "2018CS50402";
 	private StackNode top;
@@ -8,11 +10,17 @@ public class AuthStack{
 		*/
 	}
 
+	/*
+		Note that the Exceptions have already been defined for you in the includes file,
+		you just have to raise them accordingly
+
+	*/
+
 	public static boolean CheckStack(AuthStack current, String proof) throws AuthenticationFailedException{
 		/*
 			Implement Code here
 		*/
-		return false;
+		return true;
 	}
 
 	public String push(Data datainsert, String proof)throws AuthenticationFailedException{
@@ -29,7 +37,7 @@ public class AuthStack{
 		return null;
 	}
 
-	public String GetTop(String proof)throws AuthenticationFailedException{
+	public StackNode GetTop(String proof)throws AuthenticationFailedException{
 		/*
 			Implement Code here
 		*/
