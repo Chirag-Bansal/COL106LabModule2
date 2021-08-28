@@ -6,12 +6,6 @@ public class AuthList{
 	public Node firstNode;
 	public Node lastNode;
 
-	public AuthList(){
-		/*
-			Implement Code here
-		*/
-	}
-
 	/*
 		Note that the Exceptions have already been defined for you in the includes file,
 		you just have to raise them accordingly

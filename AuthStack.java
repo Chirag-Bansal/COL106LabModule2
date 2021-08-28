@@ -4,12 +4,6 @@ public class AuthStack{
 	private static final String start_string = "2018CS50402";
 	private StackNode top;
 
-	public AuthStack(){
-		/*
-			Implement Code here
-		*/
-	}
-
 	/*
 		Note that the Exceptions have already been defined for you in the includes file,
 		you just have to raise them accordingly

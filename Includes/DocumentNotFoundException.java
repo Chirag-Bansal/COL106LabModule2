@@ -1,3 +1,5 @@
+package Includes;
+
 public class DocumentNotFoundException extends Exception{
 	
 	public DocumentNotFoundException(){

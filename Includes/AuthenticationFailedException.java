@@ -1,3 +1,5 @@
+package Includes;
+
 public class AuthenticationFailedException extends Exception{
 	
 	public AuthenticationFailedException(){

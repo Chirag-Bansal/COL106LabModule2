@@ -4,10 +4,13 @@ public class DriverCode{
 	public static void main(String[] args) {
 		
 		AuthList blockchain = new AuthList();
-		Data document1 = new Data("Hello!");
-		Data document2 = new Data("This is COL106");
-		Data document3 = new Data("This is Lab Module 2");
-
+		Data document1 = new Data();
+		document1.value = "Hello!";
+		Data document2 = new Data();
+		document2.value = "This is COL106";
+		Data document3 = new Data();
+		document3.value = "This is Lab Module 2";
+		
 		String proof = null;
 
 
