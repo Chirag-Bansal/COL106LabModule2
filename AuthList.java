@@ -14,9 +14,30 @@ public class AuthList{
 
 
 	public static boolean CheckList(AuthList current, String proof) throws AuthenticationFailedException {
-		
-
-
+		CRF obj = new CRF(64);
+		Node curr = current.firstNode;
+		boolean initial = true;
+		while(curr != null){
+			if(initial){
+				String hsh = obj.Fn(AuthList.start_string + "#" + curr.data.value);
+				if(!curr.dgst.equals(hsh)) {
+					throw new AuthenticationFailedException();
+				}
+				initial = false;
+				curr = curr.next;
+			}else if(curr == current.lastNode){
+				if(!curr.dgst.equals(proof)) {
+					throw new AuthenticationFailedException();
+				}
+				curr = curr.next;
+			}else{
+				String hsh = obj.Fn(curr.previous.dgst + "#" + curr.data.value);
+				if(!curr.dgst.equals(hsh))  {
+					throw new AuthenticationFailedException();
+				}
+				curr = curr.next;
+			}
+		}
 		return true;
 	}
 

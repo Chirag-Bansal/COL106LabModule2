@@ -6,7 +6,7 @@ public class Node{
 		Data has a String attribute, you can set the value of which 
 		in the constructor or using some other function
 
-		For more reference see the Data.java files
+		For more reference see the Data.java file
 	*/
 	public Node previous;
 	public Node next;
