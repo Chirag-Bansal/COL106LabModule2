@@ -1,7 +1,7 @@
 import Includes.*;
 
 public class AuthList{
-
+	// PLEASE USE YOUR ENTRY NUMBER AS THE START STRING
 	public static final String start_string = "2018CS50402";
 	public Node firstNode;
 	public Node lastNode;
@@ -12,7 +12,10 @@ public class AuthList{
 
 	*/
 
-
+	/* 
+	Notice that this function is static, the reason why this is static is that we don't want this to be tied with
+	an object of the class AuthList. 	
+	*/
 	public static boolean CheckList(AuthList current, String proof) throws AuthenticationFailedException {
 		CRF obj = new CRF(64);
 		Node curr = current.firstNode;
@@ -67,7 +70,10 @@ public class AuthList{
 		return null;
 	}
 
-
+	/* 
+	Notice that this function is static, the reason why this is static is that we don't want this to be tied with
+	an object of the class AuthList. 	
+	*/
 	public static Node RetrieveNode(AuthList current, String proof, Data data) throws AuthenticationFailedException, DocumentNotFoundException{
 		/*
 			Implement Code here

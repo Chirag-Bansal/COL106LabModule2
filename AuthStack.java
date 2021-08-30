@@ -1,6 +1,7 @@
 import Includes.*;
 
 public class AuthStack{
+	// PLEASE USE YOUR ENTRY NUMBER AS THE START STRING
 	private static final String start_string = "2018CS50402";
 	private StackNode top;
 
@@ -10,6 +11,10 @@ public class AuthStack{
 
 	*/
 
+	/* 
+	Notice that this function is static, the reason why this is static is that we don't want this to be tied with
+	an object of the class. 	
+	*/
 	public static boolean CheckStack(AuthStack current, String proof) throws AuthenticationFailedException{
 		/*
 			Implement Code here
