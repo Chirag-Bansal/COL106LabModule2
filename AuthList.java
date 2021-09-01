@@ -29,7 +29,8 @@ public class AuthList{
 				initial = false;
 				curr = curr.next;
 			}else if(curr == current.lastNode){
-				if(!curr.dgst.equals(proof)) {
+				String hsh = obj.Fn(curr.previous.dgst + "#" + curr.data.value);
+				if(!curr.dgst.equals(hsh) || !curr.dgst.equals(proof)) {
 					throw new AuthenticationFailedException();
 				}
 				curr = curr.next;
