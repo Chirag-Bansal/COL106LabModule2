@@ -25,6 +25,10 @@ public class AuthList{
 				String hsh = obj.Fn(AuthList.start_string + "#" + curr.data.value);
 				if(!curr.dgst.equals(hsh)) {
 					throw new AuthenticationFailedException();
+				}if(curr == current.lastNode){
+					if(!curr.dgst.equals(proof)) {
+						throw new AuthenticationFailedException();
+					}
 				}
 				initial = false;
 				curr = curr.next;
